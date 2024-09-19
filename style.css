@@ -3326,7 +3326,8 @@ ul.next-prev li.active, ul.next-prev li:hover {
 	border-radius: 20px;
 }
 .site-info .copyright {
-	float: left;
+	text-align: center;
+	/* float: left; */
 	padding-top: 15px;
 }
 .site-info .copyright a {
