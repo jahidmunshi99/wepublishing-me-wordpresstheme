@@ -39,7 +39,7 @@ get_header();
  <?php get_template_part( 'navigation', 'none' ); ?>
 <?php
  if( 'default' == $layout ) { //Settings from customizer
-     if(($wepublishingme_settings[ 'wepublishingme_sidebar_layout_options' ] != 'nosidebar') && ($wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'fullwidth')): ?>
+     if( ( $wepublishingme_settings[ 'wepublishingme_sidebar_layout_options' ] != 'nosidebar' ) && ( $wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'fullwidth' ) ): ?>
 </div> <!-- #primary -->
 <?php endif;
 }

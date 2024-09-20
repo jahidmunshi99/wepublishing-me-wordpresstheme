@@ -87,10 +87,10 @@ $wp_customize->add_control('wepublishingme_theme_options[wepublishingme_sidebar_
         'type'     => 'select',
         'checked'  => 'checked',
         'choices'  => array(
-            'right'     => __('Right Sidebar','wepme'),
-            'left'      => __('Left Sidebar','wepme'),
-            'nosidebar' => __('No Sidebar','wepme'),
-            'fullwidth' => __('Full Width','wepme'),
+            'right'     => __( 'Right Sidebar','wepme' ),
+            'left'      => __( 'Left Sidebar','wepme' ),
+            'nosidebar' => __( 'No Sidebar','wepme' ),
+            'fullwidth' => __( 'Full Width','wepme' ),
         ),
     )
 );
