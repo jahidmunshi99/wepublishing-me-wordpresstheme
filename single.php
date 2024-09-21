@@ -31,7 +31,9 @@ $wepublishingme_settings = wepublishingme_get_theme_option();
 	if( have_posts() ) {
 		while( have_posts() ) {
 			the_post(); ?>
-			<?php $format = get_post_format(); ?>
+			<?php $format = get_post_format();?>
+            <h2 class="entry-title"><?php the_title(); ?></h2>
+
 			<article <?php post_class('post-format'.' format-'.$format); ?><?php  ?> id="post-<?php the_ID(); ?>">
 				<?php $featured_image_display = $wepublishingme_settings['wepublishingme_single_post_image'];
 

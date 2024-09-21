@@ -99,7 +99,7 @@ $wepublishingme_settings = wepublishingme_get_theme_option(); ?>
 <div id="content">
 <?php if ( ! is_page_template('page-templates/wepublishingme-business.php') ){ 
   if( is_page_template('three-column-blog-template.php') || is_page_template('our-team-template.php') || is_page_template( 'about-us-template.php' ) || is_page_template( 'portfolio-template.php' ) ){
-
+	
 	}else{?>
 <div class="container clearfix">
 <?php }

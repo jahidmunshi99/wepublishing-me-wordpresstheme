@@ -17,12 +17,12 @@ $wepublishingme_settings = wepublishingme_get_theme_option();
 		$layout = 'default';
 	}
 	if( 'default' == $layout ) { //Settings from customizer
-		if(($wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'nosidebar') && ($wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'fullwidth')){ ?>
+		if(( $wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'nosidebar') && ($wepublishingme_settings['wepublishingme_sidebar_layout_options'] != 'fullwidth' )){ ?>
 
 <div id="primary">
 <?php }
 	}else{ // for page/ post
-		if(($layout != 'no-sidebar') && ($layout != 'full-width')){ ?>
+		if(( $layout != 'no-sidebar') && ( $layout != 'full-width' )){ ?>
 <div id="primary">
 	<?php }
 	}?>
