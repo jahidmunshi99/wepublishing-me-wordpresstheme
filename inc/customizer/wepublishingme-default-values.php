@@ -59,6 +59,7 @@ if(!function_exists('wepublishingme_get_option_defaults_values')):
 			'wepublishingme_display_page_featured_image' => 0,
 			'wepublishingme_crop_excerpt_length'         => 1,
 			'wepublishingme_copyright' 					 => '',
+			'wepublishingme_single_post_image' 			 => 'on',
 			);
 		return apply_filters( 'wepublishingme_get_option_defaults_values', $wepublishingme_default_values );
 	}

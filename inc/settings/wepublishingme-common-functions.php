@@ -131,7 +131,7 @@ function wepublishingme_save_custom_meta( $post_id ) {
 }
 /***************Pass slider effect  parameters from php files to jquery file ********************/
 function wepublishingme_slider_value() {
-	$wepublishingme_settings = wepublishingme_get_theme_options();
+	$wepublishingme_settings = wepublishingme_get_theme_option();
 	$wepublishingme_transition_effect   = esc_attr($wepublishingme_settings['wepublishingme_transition_effect']);
 	$wepublishingme_transition_delay    = absint($wepublishingme_settings['wepublishingme_transition_delay'])*1000;
 	$wepublishingme_transition_duration = absint($wepublishingme_settings['wepublishingme_transition_duration'])*1000;
@@ -204,7 +204,7 @@ function wepublishingme_header_title() {
 
 /********************* Header Image ************************************/
 function wepublishingme_header_image_display(){
-	$wepublishingme_settings = wepublishingme_get_theme_options();
+	$wepublishingme_settings = wepublishingme_get_theme_option();
 	$wepublishingme_header_image = get_header_image();
 	$wepublishingme_header_image_options = $wepublishingme_settings['wepublishingme_custom_header_options'];
 	if($wepublishingme_header_image_options == 'homepage'){

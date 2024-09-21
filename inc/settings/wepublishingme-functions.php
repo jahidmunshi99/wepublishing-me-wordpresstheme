@@ -77,7 +77,13 @@ function wepublishingme_social_links(){
 /***************************************************************************************/
 /* DISPLAY BREADCRUMBS
 /***************************************************************************************/
-
+function wepublishingme_breadcrumb() {
+	if (function_exists('bcn_display')) { ?>
+		<div class="breadcrumb home">
+			<?php bcn_display(); ?>
+		</div> <!-- .breadcrumb -->
+	<?php }
+}
 
 
 

@@ -8,6 +8,10 @@
  * @since wepublishing 1.0
  */
 
+ // ***************************************************************************************
+//  Sidebar Start
+// ***************************************************************************************
+
  $wepublishingme_settings = wepublishingme_get_theme_option(); 
  global $wepublishingme_content_layout;
  if( $post ) {

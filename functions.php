@@ -213,6 +213,7 @@ function wepublishingme_customize_register( $wp_customize ){
 	require get_template_directory() . '/inc/customizer/functions/theme-options.php';
 	require get_template_directory() . '/inc/customizer/functions/frontpage-features.php';
 	require get_template_directory() . '/inc/customizer/functions/featured-content-customizer.php';
+	require get_template_directory() . '/inc/customizer/functions/single-post-page-features.php';
 
 }
 
