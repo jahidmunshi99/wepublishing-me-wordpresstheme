@@ -36,6 +36,48 @@ function wepublishingme_excerpt_length( $length ){
 
 
 
+/***************************************************************************************/
+/* WePublishingme CUSTOM PAGINATION
+/***************************************************************************************/
+function wepublishing_pagination( $pages = '', $range = 2 ){
+    $showitems = ( $range * 2 ) + 1; //Number of Pagination items Show
+    global $paged;
+
+    if( empty( $paged) ){
+        $paged = 1;
+    }
+
+    if( $pages == ''){
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        if( ! $pages ){
+            $pages = 1;
+        }
+    }
+
+    if( 1 != $pages ){
+        echo '<div class="pagination clearfix">';
+
+        //Display Back Button
+        if( $paged > 1 ){
+            echo '<a class="previous" href=" ' . get_pagenum_link( $paged - 1) .'">&laquo; Back</a>';
+        }
+
+        //Total Number of Pages Display
+        for( $i = 1; $i <= $pages; $i++){
+            if( 1 != $pages && (!( $i >= $paged + $range + 1  || $i <= $paged - $range -1)) || $pages <= $showitems ){
+                echo ( $paged == $i ) ? '<span class="wepcurrent">' . $i . '</span>' : '<a href="' .get_pagenum_link( $i ) .'" class="wepinactive">'. $i .'</a>';
+            }
+        }
+
+        //Display Next Button
+        if( $paged < $pages ){
+            echo '<a href=" '. get_pagenum_link( $paged + 1 ).' ">Next &raquo</a>';
+        }
+        echo '</div>';
+    }
+
+}
 
 
 /***************************************************************************************/
