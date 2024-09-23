@@ -237,12 +237,36 @@ function wepublishing_display_frontpage(){
 /**************************************************************************************/
 /* WePublishingme Header Display
 /**************************************************************************************/
-add_action( 'wepublishingme_show_header', 'wepublishingme_display_header' );
+/**
+ * Site Branding
+ */
+add_action( 'wepublishingme_site_branding', 'wepublishingme_display_header' );
 function wepublishingme_display_header(){
-
+	echo '<div id="site-branding">';
+		wepublishing_custom_logo();
+		if( is_home() || is_front_page() ){ ?>
+			<h1 id="site-title">
+		<?php }else{ ?>
+			<h2 class="site-title"> <?php } ?>
+			<a href=" <?php echo esc_url( home_url('/')); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' )) ?>" rel="home"><?php bloginfo( 'name' ) ?></a>
+			<?php if( is_home() || is_front_page() ){
+				'</h1> <!-- end site title -->';
+			}else{
+				'</h2> <!-- end site title -->';
+			}
+	echo '</div> <!-- site branding end -->';
 }
 
-
+/**
+ * Custom Logo
+ */
+if( ! function_exists( 'wepublishing_custom_logo' )):
+	function wepublishing_custom_logo(){
+		if( function_exists( 'the_custom_logo' )){
+			the_custom_logo( );
+		}
+	}
+endif;
 
 
 
