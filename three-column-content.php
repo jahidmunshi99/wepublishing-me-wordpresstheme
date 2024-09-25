@@ -8,6 +8,7 @@
  */
 ?>
 
+
 <div class="three-column">
     <div class="latest-blog-content">
         <article id="post-<?php the_ID() ?>" class="<?php post_class() ?>">
@@ -50,4 +51,5 @@
         </article> <!-- article close -->
     </div> <!-- latest blog content -->
 </div>
+
 

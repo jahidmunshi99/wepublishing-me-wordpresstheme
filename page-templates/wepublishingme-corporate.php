@@ -11,7 +11,10 @@
 
  get_header() ?>
 	<main id="main" role="main">'
-		<section id="freesiaempire_portfolio_widget-1" class="widget widget_portfolio clearfix"><div class="portfolio-container clearfix"><div class="four-column-full-width freesia-animation zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
+		<section id="hero-section" class="bg-silver">
+			<?php do_action('hero_slider') ?>
+		</section>
+		<!-- <section id="freesiaempire_portfolio_widget-1" class="widget widget_portfolio clearfix"><div class="portfolio-container clearfix"><div class="four-column-full-width freesia-animation zoomIn" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s;">
 				<h2 class="widget-title">STRUCTURING YOUR BUSINESS</h2> <p class="widget-highlighted-sub-title wow fadeInUp">Sed mattis ut ligula quis ultric ies. Integer vel condimentum enim. Praesent sed aliquet fringilla venenatis.</p>
 				<a title="View Our Work" href="https://themefreesia.com/plugins" class="btn-default light-color">View Our Work</a>
 				</div>
@@ -82,10 +85,10 @@
 				</div>
 
 				</div> 
-		</section>
+		</section> -->
 
 		<!-- Latest From Blog -->
-		<section id="freesiaempire_post_widget-1" class="widget widget_latest_blog"> <div class="container clearfix">
+		<!-- <section id="freesiaempire_post_widget-1" class="widget widget_latest_blog"> <div class="container clearfix">
 				<h2 class="widget-title freesia-animation fadeInDown" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">LATEST FROM BLOG</h2> <p class="latest-blog-sub-title freesia-animation fadeInDown" data-wow-delay="1s" style="visibility: visible; animation-delay: 1s;">Maecenas sit amet suscipit orci, sit amet blandit felis. Ut bibendum tellus vitae sagittis tempor.</p>
 				<div class="column clearfix">
 				<div class="two-column">
@@ -187,7 +190,7 @@
 				</article>
 				</div> 
 				</div> </div>  
-		</section>
+		</section> -->
 
 
  	</main>

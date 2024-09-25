@@ -151,6 +151,7 @@ require get_template_directory() . '/inc/jetpack.php';
 /* WePublishingme Widgets 
 /***************************************************************************************/
 require get_template_directory() . '/inc/widgets/widgets-functions/contactus-widgets.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/services-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/post-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/register-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/testimonials-widgets.php';
@@ -268,6 +269,9 @@ if( ! function_exists( 'wepublishing_custom_logo' )):
 	}
 endif;
 
-
+/**
+ * Corporate Template
+ */
+require get_template_directory() . '/inc/front-page/front-page-hero.php';
 
 

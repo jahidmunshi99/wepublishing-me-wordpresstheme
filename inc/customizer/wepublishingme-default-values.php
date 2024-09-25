@@ -29,7 +29,7 @@ if(!function_exists('wepublishingme_get_option_defaults_values')):
 			'wepublishingme_custom_header_options'       => 'homepage',
 			'wepublishingme_slider_link'                 => 0,
 			'wepublishingme_tag_text'                    => esc_html__('Read More','wepme'),
-			'wepublishingme_excerpt_length'              => '65',
+			'wepublishingme_excerpt_length'              => '25',
 			'wepublishingme_single_post_image'           => 'off',
 			'wepublishingme_reset_all'                   => 0,
 			'wepublishingme_stick_menu'                  => 0,
