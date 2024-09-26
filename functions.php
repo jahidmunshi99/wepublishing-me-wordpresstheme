@@ -151,11 +151,12 @@ require get_template_directory() . '/inc/jetpack.php';
 /* WePublishingme Widgets 
 /***************************************************************************************/
 require get_template_directory() . '/inc/widgets/widgets-functions/contactus-widgets.php';
-require get_template_directory() . '/inc/widgets/widgets-functions/services-widgets.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/hero-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/post-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/register-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/testimonials-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/portfolio-widgets.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/counter-widgets.php';
 
 /***************************************************************************************/
 /* WePublishingme Customizer

@@ -30,7 +30,7 @@
                     }
                     echo '<div class="header-social-block">';
                         do_action( 'social_links' );
-                    echo '</div>'
+                    echo '</div>';
                 ?>
             </div> <!-- end container -->
         </div> <!-- end top header -->

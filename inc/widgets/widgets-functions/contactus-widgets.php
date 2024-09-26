@@ -21,7 +21,7 @@ class wepublishing_contact_widget extends WP_Widget{
 
             //Display Widget Title
             if( !empty( $instance['title'] )){
-                echo $args['before_title'] . apply_filters('widget_title', $instance['title']) .$args['after_title'];
+                echo '<h2 style="text-transform: uppercase">'. apply_filters('widget_title', $instance['title']) . '</h2>';
             }
 
             //Display Message
@@ -43,7 +43,7 @@ class wepublishing_contact_widget extends WP_Widget{
         ?>
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'wepme'); ?></label>
-            <input style="backgound-color:black" class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
         </p>
         <p>
             <label for="<?php echo esc_attr($this->get_field_id('message')); ?>"><?php _e('Message:', 'wepme'); ?></label>
