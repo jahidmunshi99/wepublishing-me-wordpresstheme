@@ -12,14 +12,15 @@ class wepublishing_counter_widget extends WP_Widget{
             'name' => '',
             'text' => '',
         ));
+        $name = $instance['name'];
+        $text = $instance['text'];
         ?>
-        <p>
-            <label for="<?php echo esc_attr( $this->get_field_id('name') ) ?>"><?php echo esc_attr_e( 'Name', 'wepme' ) ?></label>
-            <input type="text" name="<?php echo esc_attr( $this->get_field_name('name') ) ?>" id="<?php echo esc_attr( $this->get_field_id('name')) ?>" value="<?php echo esc_attr( $instance['name'] ) ?>">
+            <label for="<?php echo ( $this->get_field_id( 'name' )) ?>"><?php echo esc_attr_e('Name', 'wepme') ?></label>
+            <input type="text" name="<?php echo esc_attr($this->get_field_name('name')) ?>" value="<?php echo esc_attr(  $name ) ?>" id="<?php echo esc_attr($this->get_field_id('name')) ?>">
         </p>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id('text') ) ?>"><?php echo esc_attr_e( 'Text', 'wepme' ) ?></label>
-            <input type="text" name="<?php echo esc_attr( $this->get_field_name('text') ) ?>" id="<?php echo esc_attr( $this->get_field_id('text')) ?>" value="<?php echo esc_attr( $instance['text'] ) ?>">
+            <label for="<?php echo $this->get_field_id('title') ?>"><?php echo esc_attr_e('Text', 'wepme') ?></label>
+            <input type="text" id="<?php echo $this->get_field_id('text') ?>" name="<?php echo esc_attr($this->get_field_name('text')) ?>" value="<?php echo esc_attr( $text ) ?>">
         </p>
         <?php
     }
