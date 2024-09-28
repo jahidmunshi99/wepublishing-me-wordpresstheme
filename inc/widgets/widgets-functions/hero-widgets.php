@@ -21,12 +21,12 @@
             'btn_2'      => '',
             'btn_2_url'  => '',
         ));
-        $heading    = esc_attr( $instance['heading'] );
-        $subheading = esc_attr( $instance['subheading'] );
-        $btn_1      = esc_attr( $instance['btn_1'] );
-        $btn_url_1  = esc_url( $instance['btn_1_url'] );
-        $btn_2      = esc_attr( $instance['btn_2'] );
-        $btn_url_2  = esc_url( $instance['btn_2_url'] );
+        $heading    = ! empty ( $instance['heading'] ) ? esc_attr( $instance['heading'] ) : "Publish your book with WePublishing";
+        $subheading = ! empty ( $instance['subheading'] ) ? esc_attr( $instance['subheading'] ) : "Professional Publishing Services for Independent Authors";
+        $btn_1      = ! empty ( $instance['btn_1'] ) ? esc_attr( $instance['btn_1'] ) : "Get A Quote";
+        $btn_url_1  = ! empty ( $instance['btn_1_url'] ) ? esc_url( $instance['btn_1_url'] ) : "#";
+        $btn_2      = ! empty ( $instance['btn_2'] ) ? esc_attr( $instance['btn_2'] ) : "View Portfolio";
+        $btn_url_2  = ! empty ( $instance['btn_2_url'] ) ? esc_url( $instance['btn_2_url'] ) : "#";
 
         ?>
             <p>
@@ -70,23 +70,32 @@
     }
 
     public function widget( $args, $instance ){
-        $heading    = esc_html( $instance['heading'] );
-        $subheading = esc_html( $instance['subheading'] );
-        $btn_1      = esc_html( $instance['btn_1'] );
-        $btn_url_1  = esc_url( $instance['btn_1_url'] );
-        $btn_2      = esc_attr( $instance['btn_2'] );
-        $btn_url_2  = esc_url( $instance['btn_2_url'] );
+        $heading    = ! empty ( $instance['heading'] ) ? apply_filters( 'widget_title', $instance['heading'] ) : "Publish your book with WePublishing";
+        $subheading = ! empty ( $instance['subheading'] ) ? esc_html( $instance['subheading'] ) : "Professional Publishing Services for Independent Authors";
+        $btn_1      = ! empty ($instance['btn_1'] ) ? esc_html( $instance['btn_1'] )  : "Get A Quote";
+        $btn_url_1  = ! empty ( $instance['btn_1_url'] ) ? $instance['btn_1_url'] : "#";
+        $btn_2      = ! empty ( $instance['btn_2'] ) ? esc_attr( $instance['btn_2'] ) : "View Portfolio";
+        $btn_url_2  = ! empty ( $instance['btn_2_url'] ) ? esc_url( $instance['btn_2_url'] ) : "#";
 
         echo $args['before_widget'];
         ?>
+        <section class="hero-section clearfix">
+            <div class="container">
+                <div class="column-2">
+                    <h1><?php echo $heading ?></h1>
+                    <h2><?php echo $subheading ?></h2>
+                    <div class="btn-hero">
+                        <div><a class="hero-btn more-link" href="<?php echo esc_html( $btn_url_1 ) ?>"><?php echo $btn_1 ?></a></div>
+                        <div><a class="hero-btn more-link" href="<?php echo esc_html( $btn_url_2 ) ?>"><?php echo $btn_2 ?> </a></div>
 
-        <h1><?php echo $heading ?></h1>
-        <h2><?php echo $subheading ?></h2>
-        <div><a class="more-link" href="<?php echo esc_html( $btn_url_1 ) ?>"><?php echo $btn_1 ?></a></div>
-        <div><a class="more-link" href="<?php echo esc_html( $btn_url_2 ) ?>"><?php echo $btn_2 ?> </a></div>
-        
-        
+                    </div>
+                </div>
+                <div class="column-2">
+                    <img src="<?php echo get_template_directory_uri() . '/assets/images/25.jpg' ?>" alt="Image">
+                </div>
 
+            </div>
+        </section>       
         <?php
 
         echo $args['after_widget'];

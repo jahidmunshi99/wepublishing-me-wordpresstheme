@@ -21,7 +21,7 @@ class wepublishing_contact_widget extends WP_Widget{
 
             //Display Widget Title
             if( !empty( $instance['title'] )){
-                echo '<div class="container"><h2 style="text-transform: uppercase">'. apply_filters('widget_title', $instance['title']) . '</h2>';
+                echo '<div class="container"><h1 style="text-transform: uppercase">'. apply_filters('widget_title', $instance['title']) . '</h1>';
             }
 
             //Display Message
