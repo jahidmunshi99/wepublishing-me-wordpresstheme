@@ -273,6 +273,6 @@ endif;
 /**
  * Corporate Template
  */
-require get_template_directory() . '/inc/front-page/front-page-hero.php';
+// require get_template_directory() . '/inc/front-page/front-page-hero.php';
 
 

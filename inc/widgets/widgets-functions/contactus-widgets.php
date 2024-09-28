@@ -21,12 +21,12 @@ class wepublishing_contact_widget extends WP_Widget{
 
             //Display Widget Title
             if( !empty( $instance['title'] )){
-                echo '<h2 style="text-transform: uppercase">'. apply_filters('widget_title', $instance['title']) . '</h2>';
+                echo '<div class="container"><h2 style="text-transform: uppercase">'. apply_filters('widget_title', $instance['title']) . '</h2>';
             }
 
             //Display Message
             if( ! empty( $instance['message'] )){
-                echo '<p>' . esc_html($instance['message'] ) . '</p>';
+                echo '<p>' . esc_html($instance['message'] ) . '</p> </div?';
             }
 
             /**
@@ -41,14 +41,15 @@ class wepublishing_contact_widget extends WP_Widget{
         $title = !empty( $instance['title'] ) ? $instance['title'] : __( 'Default Title', 'wepme' );
         $message = !empty( $instance['message']) ? $instance['message'] : __('Default Message', 'wepme' );
         ?>
-        <p>
-            <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'wepme'); ?></label>
-            <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
-        </p>
-        <p>
-            <label for="<?php echo esc_attr($this->get_field_id('message')); ?>"><?php _e('Message:', 'wepme'); ?></label>
-            <textarea class="widefat" id="<?php echo esc_attr($this->get_field_id('message')); ?>" name="<?php echo esc_attr($this->get_field_name('message')); ?>"><?php echo esc_html( $message ); ?></textarea>
-        </p>
+            <p>
+                <label for="<?php echo esc_attr($this->get_field_id('title')); ?>"><?php _e('Title:', 'wepme'); ?></label>
+                <input class="widefat" id="<?php echo esc_attr($this->get_field_id('title')); ?>" name="<?php echo esc_attr($this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+            </p>
+            <p>
+                <label for="<?php echo esc_attr($this->get_field_id('message')); ?>"><?php _e('Message:', 'wepme'); ?></label>
+                <textarea class="widefat" id="<?php echo esc_attr($this->get_field_id('message')); ?>" name="<?php echo esc_attr($this->get_field_name('message')); ?>"><?php echo esc_html( $message ); ?></textarea>
+            </p>
+        </div>
         <?php
     }
 

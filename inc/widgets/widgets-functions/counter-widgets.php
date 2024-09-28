@@ -35,8 +35,10 @@ class wepublishing_counter_widget extends WP_Widget{
         $name = esc_html( $instance['name'] );
         $text = esc_html( $instance['text'] );
         echo $args['before_widget']?>
-        <h2><?php echo $name ?></h2>
-        <p><?php echo $text ?></p>
+        <div class="container">
+            <h2><?php echo $name ?></h2>
+            <p><?php echo $text ?></p>
+        </div>
         <?php
         echo $args['after_widget'];
     }
