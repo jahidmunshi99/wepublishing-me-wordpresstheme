@@ -88,8 +88,8 @@ if ( ! is_page_template( 'page-templates/wepublishingme-corporate.php' ) ){
 				echo '<div class="copyright">';?>
 					<?php  echo '&copy; ' . date_i18n(__('Y','wepme')) ; ?>
 				<a title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" target="_blank" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php echo get_bloginfo( 'name', 'display' ); ?></a> | 
-								<?php _e('Designed by:','wepme'); ?> <a title="<?php esc_attr__( 'Themefreesia', 'wepme' ); ?>" target="_blank" href="<?php echo esc_url( 'https://themefreesia.com' ); ?>"><?php the_author();?></a> | 
-								<?php _e('Powered by:','wepme'); ?> <a title="<?php echo esc_attr__( 'WordPress', 'wepme' );?>" target="_blank" href="<?php echo esc_url( 'http://wordpress.org' );?>"><?php _e('WordPress','wepme'); ?></a>
+								<?php _e('Designed by:','wepme'); ?> <a title="<?php echo get_author_name(); ?>" target="_blank" href="<?php echo home_url(); ?>"><?php echo get_author_name();?></a> | 
+								<?php _e('Powered by:','wepme'); ?> <a title="<?php echo esc_attr__( 'WordPress', 'wepme' );?>" target="_blank" href="<?php echo home_url();?>"><?php _e('WordPress','wepme'); ?></a>
 							</div>
 			<?php endif;?>
 			<div style="clear:both;"></div>
