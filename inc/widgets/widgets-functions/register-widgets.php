@@ -17,6 +17,7 @@ function wepublishingme_widgets_init(){
     // register_widget( 'wepublishing_post_widget' );
     register_widget( 'wepublishing_testimonial_widget' );
     register_widget( 'wepublishing_services_widget' );
+    register_widget( 'platform_logo_widgets');
 
     /**
      * Register Main Sidebar

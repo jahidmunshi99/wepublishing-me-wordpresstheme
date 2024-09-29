@@ -157,6 +157,7 @@ require get_template_directory() . '/inc/widgets/widgets-functions/register-widg
 require get_template_directory() . '/inc/widgets/widgets-functions/testimonials-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/services-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/achivement-widgets.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/platform-logo-widgets.php';
 
 /***************************************************************************************/
 /* WePublishingme Customizer
