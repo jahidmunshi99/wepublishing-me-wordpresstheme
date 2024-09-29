@@ -13,7 +13,7 @@ add_action( 'widgets_init', 'wepublishingme_widgets_init' );
 function wepublishingme_widgets_init(){
     register_widget( 'wepublishing_contact_widget' );
     register_widget( 'wepublishing_hero_section_widgets' );
-    register_widget( 'wepublishing_counter_widget' );
+    register_widget( 'wepublishing_achivement_widget' );
     // register_widget( 'wepublishing_post_widget' );
     register_widget( 'wepublishing_testimonial_widget' );
     register_widget( 'wepublishing_services_widget' );

@@ -156,7 +156,7 @@ require get_template_directory() . '/inc/widgets/widgets-functions/post-widgets.
 require get_template_directory() . '/inc/widgets/widgets-functions/register-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/testimonials-widgets.php';
 require get_template_directory() . '/inc/widgets/widgets-functions/services-widgets.php';
-require get_template_directory() . '/inc/widgets/widgets-functions/counter-widgets.php';
+require get_template_directory() . '/inc/widgets/widgets-functions/achivement-widgets.php';
 
 /***************************************************************************************/
 /* WePublishingme Customizer

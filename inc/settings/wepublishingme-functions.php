@@ -166,6 +166,8 @@ add_action( 'wp_enqueue_scripts', 'wepubishingme_scripts' );
 function wepubishingme_scripts(){
     $wepublishingme_settings = wepublishingme_get_theme_option();
     wp_enqueue_style( 'wepublishingme_style', get_stylesheet_uri() );
+    wp_enqueue_style( 'fontawesome-css', get_template_directory_uri() . '/assets/vendor/fontawesome/all.min.css', array(), '6.5.1' );
+    wp_enqueue_style( 'fontawesome-min', get_template_directory_uri() . '/assets/vendor/fontawesome/fontawesome.min.css', array(), '6.5.1' );
     wp_enqueue_script('wepublishing_jquery', get_template_directory_uri() . '/assets/vendor/js/jquery.cycle.all.js', array('jquery'), '3.0.3', true );
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/assets/vendor/genericons/genericons.css', array(), '3.4.1' );
 

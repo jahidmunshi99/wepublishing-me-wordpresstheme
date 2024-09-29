@@ -1084,7 +1084,7 @@ img#wpstats {
 	background-color: #F8F8F8;
 		-webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
 	  	-moz-box-shadow:    0 1px 2px rgba(0, 0, 0, 0.15);  /* Firefox 3.5 - 3.6 */
-  	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09) !important;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  	box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.09);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   	width: 100%;
   	z-index: 999;
@@ -2433,7 +2433,10 @@ input.search-field {
 	padding: 0 20px;
 }
 .feature-content {
-	background-color: #f8f8f8;
+	background-color: #ffffff;
+	webkit-box-shadow: 0 0 10px rgba(0,0,0,.1);
+		-moz-box-shadow: 0 0 10px rgba(0,0,0,.1);
+		box-shadow: 0 0 10px rgba(0,0,0,.1);
 	padding: 40px 20px;
 		-moz-transition: all 300ms ease-out 0s;
 		-o-transition: all 300ms ease-out 0s;
@@ -2441,10 +2444,8 @@ input.search-field {
 	transition: all 300ms ease-out 0s;
 }
 .feature-content:hover {
-	margin-top: -5px;
-	webkit-box-shadow: 0 8px 6px -6px #747474;
-	   -moz-box-shadow: 0 8px 6px -6px #747474;
-	        box-shadow: 0 8px 6px -6px #747474;
+	margin-top: -10px;
+	border-radius: 10px;
 }
 .our_feature .feature-icon,
 .our_feature .feature-icon img {
@@ -2493,6 +2494,16 @@ input.search-field {
 .our_feature .feature-title a:hover {
 	color: #6B34F7;
 }
+
+/* Our achivement
+================================================== */
+.achivement-content{
+	text-align: center;
+}
+
+
+
+
 
 /* Parallax  Widget
 ================================================== */
