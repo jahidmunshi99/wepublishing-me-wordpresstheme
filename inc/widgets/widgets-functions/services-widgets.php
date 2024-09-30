@@ -87,15 +87,15 @@
         ?>
         <section class="our_feature clearfix">
                 <div class="container">
-                    <h2 class="freesia-animation fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><?php echo $section_title ?></h2>
-                    <p class="feature-sub-title freesia-animation fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><?php echo $section_subtitle ?></p>
+                    <h2 class="wepublishing-animation fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><?php echo $section_title ?></h2>
+                    <p class="wepublishing-sub-title wepublishing-animation fadeInUp" style="visibility: visible; animation-name: fadeInUp;"><?php echo $section_subtitle ?></p>
                     <div class="column clearfix">
                         <?php 
                         for ( $i = 1; $i <= $number; $i++ ) { 
                             $searvice_title   = ! empty( $instance[ "servicetitle_$i" ] ) ? esc_html ( $instance[ "servicetitle_$i" ]) : "Amazon KDP Paperback";
                             $service_details  = ! empty( $instance[ "servicedetails_$i" ] ) ? esc_html ( $instance["servicedetails_$i" ]) : "Nemo enim ipsam voluptatem quia voluptas sit asper natur auoditut fugit Nemo enim ipsam voluptatem .";
                         ?>
-                        <div class="three-column freesia-animation fadeInLeft" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInLeft;">
+                        <div class="three-column wepublishing-animation fadeInLeft">
 
                                 <div class="feature-content">
                                     <a class="feature-icon" href="" title="Customizable Design" alt="Customizable Design">

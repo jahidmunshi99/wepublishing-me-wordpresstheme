@@ -103,7 +103,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 			));
 		echo '<!-- Portfolio Widget ============================================= -->' .$before_widget;
 		echo '<div class="portfolio-container clearfix">'; ?>
-<div class="four-column-full-width freesia-animation zoomIn" data-wow-delay="0.3s">
+<div class="four-column-full-width wepublishing-animation zoomIn" data-wow-delay="0.3s">
 	<?php if (!empty($title)) { echo $before_title . esc_html($title) . $after_title; }
 			if(!empty($text)){ ?>
 	<p class="widget-highlighted-sub-title wow fadeInUp"><?php echo esc_html($text); ?></p>
@@ -114,7 +114,7 @@ class freesiaempire_portfolio_widget extends WP_Widget {
 </div>
 	<?php
 	while ($get_featured_pages->have_posts()):$get_featured_pages->the_post(); ?>
-		<div class="four-column-full-width freesia-animation zoomIn">
+		<div class="four-column-full-width wepublishing-animation zoomIn">
 		<?php $page_title = get_the_title();
 				if (has_post_thumbnail()) { ?>
  <?php echo get_the_post_thumbnail($post->ID, 'post-thumbnails');
