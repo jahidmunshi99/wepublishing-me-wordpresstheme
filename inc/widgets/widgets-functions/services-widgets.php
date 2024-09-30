@@ -38,17 +38,17 @@
             <label for="<?php echo $this->get_field_id( 'sectionsubtitle' )?>"><?php echo esc_html__('Section Sub Title', 'wepme') ?></label>
             <input type="text" name="<?php echo esc_attr( $this->get_field_name( 'sectionsubtitle' ) ) ?>" id="<?php echo esc_attr( $this->get_field_id( 'sectionsubtitle' ) ) ?>" value="<?php echo esc_attr( $section_subtitle ) ?>">
         </p>
+          
+        <p>
+            <label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php echo esc_html__('Display Number of Services', 'wepme') ?></label>
+            <input type="number" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ) ?>" id="<?php echo esc_attr( $this->get_field_id( 'number' ) ) ?>" value="<?php echo esc_attr( $number ) ?>">
+        </p>
 
         <?php      
         for( $i = 1; $number >= $i ; $i++ ){
             $searvice_title   = ! empty ( $instance[ "servicetitle_$i" ] ) ? esc_attr( $instance[ "servicetitle_$i" ]) : 'Amazon KDP Paperback';
             $service_details  = ! empty ( $instance[ "servicedetails_$i" ] ) ? esc_attr( $instance[ "servicedetails_$i" ] ) : "Nemo enim ipsam voluptatem quia voluptas sit asper natur aut oditut fugit Nemo enim ipsam voluptatem .";
         ?>
-  
-        <p>
-            <label for="<?php echo $this->get_field_id( 'number' ) ?>"><?php echo esc_html__('Display Number of Services', 'wepme') ?></label>
-            <input type="text" name="<?php echo esc_attr( $this->get_field_name( 'number' ) ) ?>" id="<?php echo esc_attr( $this->get_field_id( 'number' ) ) ?>" value="<?php echo esc_attr( $number ) ?>">
-        </p>
         <p>
             <label for="<?php echo $this->get_field_id( "servicetitle_$i" ) ?>"><?php echo esc_html__('Service Title #' .$i, 'wepme') ?></label>
             <input type="text" name="<?php echo esc_attr( $this->get_field_name( "servicetitle_$i" ) ) ?>" id="<?php echo esc_attr( $this->get_field_id( "servicetitle_$i" ) ) ?>" value="<?php echo esc_attr( $searvice_title ) ?>">
